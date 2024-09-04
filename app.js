@@ -11,11 +11,11 @@ const endpoint = `${SHOPIFY_STORE_URL}admin/api/2023-01/graphql.json`;
 const getProductsByName = async (name) => {
   const query = `
     {
-      products(query: "title:*${name}*", first: 10) {
+      products(query: "title:*${name}*", first: 250) {
         nodes {
           id
           title
-          variants(first: 3) {
+          variants(first: 50) {
             nodes {
               id
               title
