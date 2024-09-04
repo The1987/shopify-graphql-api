@@ -1,0 +1,24 @@
+{
+  "name": "shopify-graphql-api",
+  "version": "1.0.0",
+  "description": "Create a script (eg: app.js) that communicates with Shopify through Shopify’s graphql APIs. It takes input product names and fetches the appropriate products that match the name and list down the variants sorting by price.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "search": "node app.js -name "
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Chris Hantis",
+  "license": "ISC",
+  "dependencies": {
+    "@shopify/shopify-api": "^11.3.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^15.9.0",
+    "graphql-http": "^1.22.1",
+    "nodemon": "^3.1.4"
+  }
+}
